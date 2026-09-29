@@ -1,0 +1,53 @@
+Orient Academy, Ujjain - Academic Question Papers Portal
+Project Structure
+==========================================================
+
+PYQ/
+│
+├── index.php                 # Homepage with live dynamic stats & latest papers
+├── courses.php               # Dynamic degree courses catalog
+├── subjects.php              # Dynamic subjects directory with course filter
+├── papers.php                # Question papers archive with multi-filters & search
+├── search.php                # Global search page
+├── login.php                 # Student login portal
+├── register.php              # Student registration portal
+├── logout.php                # Student logout handler
+├── viewpaper.php             # View paper handler & view counter
+├── downloadpaper.php         # Direct download handler & download counter
+├── Structure.txt             # Project structure documentation
+│
+├── admin/                    # Staff & Administrator Management Console
+│   ├── adminlogin.php        # Admin login portal (DB hashed + fallback auth)
+│   ├── adminlogout.php       # Admin logout handler
+│   ├── admin_auth.php        # Admin route protection middleware
+│   ├── admindashboard.php    # Central admin KPI metrics & quick hub
+│   ├── managecourses.php     # Course catalog management
+│   ├── addcourse.php         # Add new course
+│   ├── editcourse.php        # Edit course details
+│   ├── deletecourse.php      # Delete course
+│   ├── managesubjects.php    # Subjects directory management
+│   ├── addsubject.php        # Add new subject with course & semester
+│   ├── editsubject.php       # Edit subject details
+│   ├── deletesubject.php     # Delete subject
+│   ├── getsubjects.php       # Dynamic AJAX endpoint for course-subject dropdowns
+│   ├── managepapers.php      # Question papers management
+│   ├── addpaper.php          # Upload/Add new question paper
+│   ├── editpaper.php         # Edit paper details & links
+│   ├── deletepaper.php       # Delete question paper
+│   ├── manageusers.php       # Registered students directory & management
+│   └── reports.php           # Visual analytics & Chart.js reports
+│
+├── includes/                 # Reusable components & configurations
+│   ├── db.php                # Database connection & error handler
+│   ├── header.php            # HTML head, typography, Bootstrap CSS
+│   ├── navbar.php            # Responsive navbar with Orient Academy branding
+│   ├── footer.php            # Responsive footer with branding & quick links
+│   └── auth.php              # Student route protection middleware
+│
+├── assets/                   # Static media and design assets
+│   └── css/
+│       └── style.css         # Modern styling & responsive design rules
+│
+└── database/                 # SQL Database schemas & seed data
+    ├── schema.sql            # Full MySQL database DDL + seed dataset
+    └── pyqhunt.sql           # Schema copy
